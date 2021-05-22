@@ -42,3 +42,30 @@ for(var key in course){
 for(var key in course){
   console.log(key + " : "+ course[key]);
 }
+
+//Example
+var myHonda ={
+  color :'red',
+  wheels :4,
+  engine :{
+    cylinders:4,
+    size :2.2
+  },
+  hp :[300,500,100]
+}
+console.log(myHonda.engine.size);
+console.log(myHonda.hp[0]);//hp index of 0
+
+
+var car ={
+  make :'Honda',
+  model :'Civic',
+  year:2000,
+  color:'Red',
+  mileage:75000,
+  drive:function(){
+    console.log('I am driving Honda');
+  }
+}
+
+car.drive();
