@@ -27,3 +27,18 @@ console.log(person);
 
 //Checking if property exists
 console.log('street' in address);
+
+//Itering over properties of an object
+var course ={
+  name : 'JS Training',
+  url :'www.cybertekschool.com',
+  subjects : ['es5','es6','js','ts']
+}
+
+for(var key in course){
+  console.log(key);
+}
+
+for(var key in course){
+  console.log(key + " : "+ course[key]);
+}
