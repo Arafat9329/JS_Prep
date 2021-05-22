@@ -58,3 +58,33 @@ function average(a,b,fn){
 }
 var res = average(10,20,sum);
 console.log(res);
+
+//Example
+function cmToIn(length){
+  return length/2.54;
+}
+
+function inToCm(length){
+  return length * 2.54;
+}
+
+function convert (fn,length){
+  return fn(length);
+}
+
+var inches = convert(cmToIn,10);
+var cm = convert(inToCm,10);
+
+//Callback functions : A callback is a function passed as an argument to another functions
+//A callback function can run afer another function has finished
+
+function myDisplayer(some){
+  console.log(some);
+}
+
+function myCalculator(num1,num2,myCallBack){
+  var sum =num1+num2;
+  myDisplayer(sum);
+}
+
+myCalculator(5,5,myDisplayer);
