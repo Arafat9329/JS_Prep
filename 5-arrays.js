@@ -57,11 +57,6 @@ var mixArray =["cat","Ant",3,"elephant","Bee",67];
 mixArray.sort();
 console.log(mixArray);
 
-
-
-
-
-
 console.log();
 console.log('==========================');
 var arr = new Array(1,'1','one');
