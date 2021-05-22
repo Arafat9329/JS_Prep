@@ -32,3 +32,29 @@ add(4);
 
 var add2 = add;
 add2(100,300);
+
+
+//Ananymous functions : function without name
+var show = function(){
+  console.log('This is a function');
+}
+
+show();
+
+var divide = function(a,b){
+  return a/b;
+}
+
+var d= divide(20,10);
+console.log(d);
+
+//Passing a functyion to another dunction
+function sum(a,b){
+  return a+b;
+}
+
+function average(a,b,fn){
+  return fn(a,b)/2;
+}
+var res = average(10,20,sum);
+console.log(res);
