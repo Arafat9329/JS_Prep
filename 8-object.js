@@ -60,12 +60,20 @@ console.log(myHonda.hp[0]);//hp index of 0
 var car ={
   make :'Honda',
   model :'Civic',
-  year:2000,
-  color:'Red',
-  mileage:75000,
+  year : 2000,
+  color : 'Red',
+  mileage : 75000,
+  started : false,
+  start : function(){
+    this.started = true;
+  },
   drive:function(){
-    console.log('I am driving Honda');
+    if (this.started) {
+      console.log('It is runing');
+    }else {
+      console.log('You need to start the engine first');
+    }
   }
 }
-
+car.start();
 car.drive();
