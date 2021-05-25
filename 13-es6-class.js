@@ -50,9 +50,12 @@ class Dog extends Animal{
     super(name);
     this.age=4;
   }
-
-
+eat(){
+super.eat();
+  console.log('Dog is eating');
+}
 }
 
 const d = new Dog('Puppy');
 console.log(d);
+console.log(d.eat());
