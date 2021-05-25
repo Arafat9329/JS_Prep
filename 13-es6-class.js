@@ -16,8 +16,21 @@ class Student{
 study(){
   console.log(`${this.name} is studying`);
   }
+
+static doHomeWordk(){
+  console.log(`${this.name} is doing homework`);
+  }
+
 }
 
 let s1=new Student(1,'Mike');
 console.log(`Student : ${s1.id} ${s1.name}`);
 s1.study();
+
+//Static Variable
+Student.age =20;
+console.log(Student);
+
+//static
+Student.doHomeWordk();
+//s1.doHomeWordk();//Not going to work
