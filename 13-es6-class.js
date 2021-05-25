@@ -34,3 +34,25 @@ console.log(Student);
 //static
 Student.doHomeWordk();
 //s1.doHomeWordk();//Not going to work
+
+//Inheritance
+class Animal{
+  constructor(name){
+    this.name=name;
+  }
+  eat(){
+    console.log('Animal is eating');
+  }
+}
+
+class Dog extends Animal{
+  constructor(name,age){
+    super(name);
+    this.age=4;
+  }
+
+
+}
+
+const d = new Dog('Puppy');
+console.log(d);
