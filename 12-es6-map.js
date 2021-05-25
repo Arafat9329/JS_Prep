@@ -24,3 +24,8 @@ myCars.set(1,'HondaCivic')
       .set(2,"HondaAccord")
       .set(3,'HondaCRV');
 console.log(myCars.get(2));
+
+//iteration - over keys
+for(let car of myCars.keys()){
+  console.log(car);
+}
