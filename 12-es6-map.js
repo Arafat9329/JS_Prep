@@ -37,3 +37,5 @@ for(let value of myCars){
 for(let[key,value]of myCars){
   console.log([key+"="+value]);
 }
+
+myCars.forEach((value,key)=>{console.log(key +" : "+value);})
