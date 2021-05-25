@@ -11,7 +11,13 @@ console.log(chars);
 function func(...theArgs){
   console.log(theArgs.length);
 }
-
 func();
 func(5);
 func(5,6,7);
+
+function multiply(multiply,...theArgs){
+  return theArgs.map(element => multiply * element);
+}
+
+let arry = multiply(2,15,25,42);
+console.log(arry);
