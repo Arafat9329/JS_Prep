@@ -29,3 +29,8 @@ console.log(myCars.get(2));
 for(let car of myCars.keys()){
   console.log(car);
 }
+
+//iteration - over values
+for(let value of myCars){
+  console.log(value);
+}
