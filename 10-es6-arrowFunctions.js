@@ -37,24 +37,6 @@ console.log(map1);
 //for..of : creates a loop iterating over iterable objects
 
 let myFruites = ['Apple','Orange','Banan'];
-for(let value of myFruites){
+for(let value of myFruites){z
   console.log(value);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log('End');
