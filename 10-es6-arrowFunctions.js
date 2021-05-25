@@ -24,9 +24,23 @@ let sum =(a,b) =>{
 let total = arr =>arr.reduce(((a,b) => a+b),5.5);
 let arr =[5,10,20];
 console.log(total(arr));
-// 0 + 5 = 5
-// 5 + 10 = 15
-//15 + 20 =35
+// 5.5 + 5 = 10.5
+// 10.5 + 10 = 20.5
+//205.5 + 20 =40.5
+
+//map()method : creates a new array with the results of calling a provided function
+//on every element in the calling array
+
+const map1 = arr.map(x => x*2);
+console.log(map1);
+
+//for..of : creates a loop iterating over iterable objects
+
+let myFruites = ['Apple','Orange','Banan'];
+for(let value of myFruites){
+  console.log(value);
+}
+
 
 
 
