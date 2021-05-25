@@ -17,3 +17,10 @@ visits.set(students,100);
 let fun = function(){console.log('Hello');};
 visits.set(fun,'This is function');
 console.log(visits.get(fun));
+
+//Chaining
+let myCars = new Map();
+myCars.set(1,'HondaCivic')
+      .set(2,"HondaAccord")
+      .set(3,'HondaCRV');
+console.log(myCars.get(2));
