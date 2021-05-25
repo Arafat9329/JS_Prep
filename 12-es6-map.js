@@ -34,3 +34,6 @@ for(let car of myCars.keys()){
 for(let value of myCars){
   console.log(value);
 }
+for(let[key,value]of myCars){
+  console.log([key+"="+value]);
+}
